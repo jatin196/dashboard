@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <ul>
+    {% for object in all_objects %}
+       <h3><li>{{ object.url }}</li></h3><a href="{{ object.get_delete_url }}">Delete</a>
+        <a href="{{ object.get_update_url }}">Update</a>
+    {% endfor %}
+    </ul>
+</body>
+</html>
